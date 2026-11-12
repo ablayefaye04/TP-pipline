@@ -1,0 +1,5 @@
+# Evite les fins de ligne Windows (CRLF) dans les scripts executes sous Linux
+* text=auto
+*.sh text eol=lf
+Jenkinsfile text eol=lf
+*.yml text eol=lf
