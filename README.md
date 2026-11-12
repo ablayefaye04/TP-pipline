@@ -2,7 +2,9 @@
 
 API REST Spring Boot (Java 17, Maven) avec de la logique metier testee, deployee par un pipeline CI/CD.
 
-[![CI/CD](https://github.com/<VOTRE-UTILISATEUR>/<VOTRE-DEPOT>/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/<VOTRE-UTILISATEUR>/<VOTRE-DEPOT>/actions/workflows/ci-cd.yml)
+
+![CI/CD](https://github.com/ablayefaye04/TP-pipline/actions/workflows/ci-cd.yml/badge.svg)
+
 
 ## Regles metier
 - Remise : 5 % des 50 000 FCFA HT, 10 % des 100 000 FCFA HT
