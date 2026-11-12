@@ -4,7 +4,7 @@ pipeline {
 
     tools {
         // Nom de l'installation Maven declaree dans Manage Jenkins > Tools
-        maven 'Maven3'
+        maven 'M398'
     }
 
     options {
