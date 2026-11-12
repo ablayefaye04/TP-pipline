@@ -16,7 +16,7 @@ import java.math.RoundingMode;
 public class PrixService {
     //public static final BigDecimal TAUX_TVA = new BigDecimal("0.19");
 
-    public static final BigDecimal TAUX_TVA = new BigDecimal("0.11");
+    public static final BigDecimal TAUX_TVA = new BigDecimal("0.18");
     public static final BigDecimal SEUIL_REMISE_5 = new BigDecimal("50000");
     public static final BigDecimal SEUIL_REMISE_10 = new BigDecimal("100000");
     public static final BigDecimal TAUX_REMISE_5 = new BigDecimal("0.05");
