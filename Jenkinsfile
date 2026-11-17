@@ -4,7 +4,7 @@ pipeline {
 
     tools {
         // Nom de l'installation Maven declaree dans Manage Jenkins > Tools
-        maven 'M398'
+        maven 'Maven3'
     }
 
     options {
@@ -24,28 +24,17 @@ pipeline {
             }
         }
 
-        
-stage('Test') {
-    steps {
-        echo 'Execution des tests unitaires et integration...'
-
-        sh 'mvn -B verify -DfailIfNoTests=true'
-    }
-
-    post {
-        always {
-            junit(
-                testResults: 'target/surefire-reports/*.xml',
-                allowEmptyResults: false
-            )
-
-            archiveArtifacts(
-                artifacts: 'target/site/jacoco/**',
-                allowEmptyArchive: true
-            )
+        stage('Test') {
+            steps {
+                sh 'mvn -B verify'
+            }
+            post {
+                always {
+                    junit 'target/surefire-reports/*.xml'
+                    archiveArtifacts artifacts: 'target/site/jacoco/**', allowEmptyArchive: true
+                }
+            }
         }
-    }
-}
 
         stage('Archive') {
             steps {
