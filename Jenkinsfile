@@ -8,7 +8,7 @@ pipeline {
     }
 
     options {
-        timeout(time: 15, unit: 'MINUTES')
+        timeout(time: 1, unit: 'MINUTES')
         buildDiscarder(logRotator(numToKeepStr: '10'))
     }
 
